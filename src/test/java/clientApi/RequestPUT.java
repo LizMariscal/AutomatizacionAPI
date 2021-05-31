@@ -4,7 +4,7 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-public class RequestPUT extends RequestClient{
+public class RequestPUT extends RequestClient {
 
     @Override
     public ResponseInformation send(RequestInformation request) {
@@ -21,6 +21,4 @@ public class RequestPUT extends RequestClient{
 
         response.close();
         return responseInformation;
-
-    }
 }

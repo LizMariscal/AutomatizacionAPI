@@ -5,7 +5,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 public class RequestPOST extends RequestClient{
-
     @Override
     public ResponseInformation send(RequestInformation request) {
         System.out.println("POST" + request.getUrl());
@@ -22,8 +21,4 @@ public class RequestPOST extends RequestClient{
 
         response.close();
         return responseInformation;
-
-    }
-
-
 }
